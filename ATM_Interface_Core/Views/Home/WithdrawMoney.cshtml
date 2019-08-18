@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "WithdrawMoney";
+}
+
+<div class="row">
+    <div class="col-md-3"></div>
+
+    <div class="col-md-3">
+        <form class="form-horizontal" asp-action="WithdrawMoney" method="post">
+            <div class="form-group">
+                <label @*class="form-control"*@>Enter money for withdraw:</label>
+                <input class="form-control" name="moneyForWithdraw" />
+            </div>
+
+            <br />
+
+            <div class="form-group">
+                <input class="btn btn-primary" type="submit" value="OK" />
+                <input class="btn btn-danger" type="reset" value="Reset" />
+            </div>
+        </form>
+    </div>
+</div>
